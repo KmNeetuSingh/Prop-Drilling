@@ -1,0 +1,98 @@
+.app-container {
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: cursive;
+    text-align: center;
+    padding: 20px;
+    background-color: #a1cadd; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  }
+  h1 {
+    color: #030303;
+    font-size: 40px; 
+    margin-bottom: 30px;
+    transition: transform 0.5s, box-shadow 0.2s, color 0.3s; 
+  }
+  
+  h1:hover {
+    transform: scale(1.1); 
+    color: #3c3fe7; 
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); 
+  }
+  ul {
+    list-style-type: none; 
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffffff; 
+    border-radius: 6px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s, box-shadow 0.2s; 
+  }
+  
+  li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  button {
+    margin-top: 40px;
+    background-color: #3c3fe7; 
+    color: rgb(255, 255, 255); 
+    border: none;
+    margin: 0 10px; 
+    border-radius: 4px; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+  }
+  
+  button:hover {
+    background-color: #3235b0; 
+    transform: translateY(-2px); 
+  }
+  
+  input {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    width: 70%; 
+    margin-right: 10px;
+    transition: border-color 0.3s; 
+  }
+  
+  input:focus {
+    border-color: #3c3fe7; 
+    outline: none; 
+  }
+  
+  @media (max-width: 480px) {
+    .app-container {
+      width: 90%; 
+    }
+  
+    input {
+      width: 60%; 
+    }
+  
+    button {
+      margin: 10px 0; 
+      width: 100%; 
+    }
+  }
+  
+  h1::before {
+    content: '📝'; 
+    margin-right: 10px;
+  }
+  
+  button::after {
+    content: ' ➕'; 
+  }
