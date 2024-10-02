@@ -1,4 +1,3 @@
-// TodoList.js
 import React from 'react';
 
 function TodoList({ todos, removeTodo }) {
